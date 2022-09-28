@@ -1,6 +1,6 @@
-import { IsEmail, IsNotEmpty, IsOptional, IsString, Matches } from "class-validator"
-import { IsPhone } from "src/common/decorators/phone.validator"
-import { RegexHelper } from "src/common/helpers/regex.helper"
+import { IsEmail, IsNotEmpty, IsOptional, IsString, Matches } from 'class-validator'
+import { IsPhone } from 'src/common/decorators/phone.validator'
+import { RegexHelper } from 'src/common/helpers/regex.helper'
 
 export default class UsersCreateDto {
 

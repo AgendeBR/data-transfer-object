@@ -1,5 +1,5 @@
-import { IsEmail, IsOptional, IsString } from "class-validator"
-import { IsPhone } from "src/common/decorators/phone.validator"
+import { IsEmail, IsOptional, IsString } from 'class-validator'
+import { IsPhone } from 'src/common/decorators/phone.validator'
 
 export default class UsersUpdateDto {
 
@@ -11,7 +11,7 @@ export default class UsersUpdateDto {
   @IsOptional()
   @IsEmail()
   email: string
-  
+
   @IsString()
   @IsOptional()
   @IsPhone()
