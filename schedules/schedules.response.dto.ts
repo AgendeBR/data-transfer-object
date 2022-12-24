@@ -1,4 +1,5 @@
 import { Expose } from 'class-transformer'
+import ProfessionalsDto from '../professionals/professionals.response.dto'
 import { CanceledReasonEnum } from './canceled.reason.enum'
 
 export default class SchedulesDto {
@@ -13,7 +14,19 @@ export default class SchedulesDto {
   professionalId: string
 
   @Expose()
+  professional: ProfessionalsDto
+
+  @Expose()
   serviceId: string
+
+  @Expose()
+  fullname: string
+
+  @Expose()
+  phone: string
+
+  @Expose()
+  bornAt: Date
 
   @Expose()
   scheduled: Date
